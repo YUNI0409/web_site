@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+}
+.clear {
+    clear: both;
+}
+
+/* 헤더 */
+
+header {
+    background-color: rgb(20, 127, 205);
+    height: 250px;
+}
+#logo {
+    padding: 25px;
+}
+#logo a {
+    width: 257px;
+    height: 93px;
+    background-image: url("img/logo.jpg");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: block;
+    padding-top: 50px;
+}
+#header img {
+    position: absolute;
+}
+#header .p1 {
+    transform: rotate(310deg);
+    right: 275px;
+    top: -15px;    
+}
+#header .p2 {
+    transform: rotate(220deg);
+    right: 55px;
+    top: -15px;
+}
+#header .p3 {
+    transform: rotate(140deg);
+    right: 335px;
+    top: 60px;
+    opacity: 0.8;
+}
+#header .p4 {
+    transform: rotate(190deg);
+    right: 505px;
+    top: 5px;
+    opacity: 0.6;
+}
+#header .p5 {
+    transform: rotate(45deg);
+    right: 635px;
+    top: -25px;
+    opacity: 0.4;
+}
+
+/* 네비 */
+
+#nav {
+    background-color: rgb(20, 127, 205);
+    height: 45px;
+    border-bottom: 4px solid rgb(31, 101, 151);
+}
+#nav>ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+#nav>ul>li {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#nav>ul>li>a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+#nav>ul>li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#nav>ul>li:hover a {
+    color: rgb(20, 127, 205);
+}
+#nav>ul>li ul {
+    display: none;
+    background-color: rgb(218, 218, 218);
+    left: -1px;
+    top: 45px;
+    width: 100%;
+    border: 1px solid rgb(31, 101, 151);
+    border-top: none;
+}
+#nav>ul>li:hover ul {
+    display: block;
+    position: absolute;
+}
+#nav ul li ul li:hover {
+    background-color: rgb(165, 165, 165);
+}
+#nav ul li ul li:hover a {
+    color: white;
+}
+
+/* 섹션 1 */
+
+section {
+    width: 1100px;
+    margin: 40px auto;
+}
+#left {
+    width: 640px;
+    float: left;
+}
+#left .lefttext {
+    float: left;
+    width: 300px;
+    height: 270px;
+    background-color: rgb(209, 212, 219);
+    border-radius: 5px;
+    margin: 5px;
+}
+#left .lefttext h3 {
+    font-size: 25px;
+    color: rgb(90, 133, 163);
+    margin: 15px 20px;
+}
+#left .lt1 {
+    background-color: rgb(20, 127, 205);
+}
+#left .lt1 ul {
+    width: 225px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#left .lt1 ul li a {
+    float: left;
+    width: 100px;
+    margin: 5px;
+    height: 80px;
+    border: 1px solid rgba(154, 185, 207, 0.5);
+    background-color: rgb(216, 218, 219);
+    color: rgb(70, 70, 70);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+}
+#left .lt1 ul li a:hover {
+    background-color: rgb(154, 185, 207);
+    color: white;
+}
+#left .lt1 h3 {
+    color: rgb(233, 233, 233);
+}
+#left .lt2 p {
+    color: gray;
+    margin: 15px 25px;
+    padding-bottom: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(127, 144, 156, 0.5);
+}
+#left .lt2 form {
+    margin-top: 25px;
+    margin-left: 55px;
+}
+#left .lt3 h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+#left .lt3 p {
+    color: gray;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#left .lt3 iframe {
+    border-radius: 15px;
+}
+#left .lt4 {
+    background-color: rgb(20, 127, 205);
+    position: relative;
+    overflow: hidden;
+}
+#left .lt4 h3 {
+    font-size: 34px;
+    margin: 5px 0 10px 15px;
+    color: rgb(233, 233, 233);
+}
+#left .lt4 p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgba(233, 233, 233, 0.7);
+}
+#left .lt4 h4 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 20px;
+    color: rgba(233, 233, 233, 0.7);
+}
+#left .lt4back {
+    width: 300px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    background-image: url("img/pregnant-3.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 115px bottom;
+    transition: all 0.5s;}
+#left .lt4back:hover {
+    transform: scale(1.2) translate(-20px, -15px);
+    overflow: hidden;
+}
+
+/* 섹션 2 */
+
+#right {
+    float: right;
+    width: 440px;
+    height: 650px;
+    border-top: 1px solid rgb(198, 200, 209);
+}
+#right .righttext {
+    margin: 25px 0;
+}
+#right .rbanner img {
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+#right .rlogo {
+    border-top: 1px solid rgb(198, 200, 209);
+}
+#right .rlogo h3 {
+    padding: 10px;
+    background-color: rgb(104, 168, 214);
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+#right .rlogo a {
+    display: block;
+    float: left;
+    margin: 20px 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    text-indent: -9999%;
+}
+#right .rlogo .logo1 {
+    background-image: url("img/logo-naverblog.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 25px;
+}
+#right .rlogo .logo2 {
+    background-image: url("img/logo-kakaostory.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#right .rlogo .logo3 {
+    background-image: url("img/logo-kakaotalk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#right .rlogo .logo4 {
+    background-image: url("img/logo-facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#right .rlogo .logo5 {
+    background-image: url("img/logo-naver.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#right .rtext {
+    margin: 115px 0;
+    border-top: 1px solid rgb(198, 200, 209);
+    padding: 25px 0 15px 0;
+}
+#right .rtext h2 a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(104, 168, 214);
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+#right .rtext ul {
+    margin: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#right .rtext :target ul {
+    height: 120px;
+    overflow: auto;
+    background-color: rgb(232, 235, 247);
+    border-radius: 10px;
+}
+#right .rtext ul li {
+    padding: 5px 10px;
+}
+#right .rtext ul li a {
+    font-size: 12px;
+    color: black;
+}
+#right .rtext ul li a span {
+    font-size: 11px;
+    float: right;
+}
+
+/* 하단 */
+
+aside {
+    width: 550px;
+    position: relative;
+    float: left;
+    top: -20px;
+    left: 130px;
+    height: 225px;
+}
+.tabs label {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid rgb(209, 212, 219);
+    background-color: rgb(232, 235, 247);
+    border-radius: 5px 0 0 5px;
+    color: rgb(96, 154, 196);
+    border-right: none;
+    cursor: pointer;
+    width: 140px;
+}
+.tabs .tab {
+    background-color: white;
+    border: 2px solid rgb(209, 212, 219);
+    border-radius: 0 10px 10px 10px;
+    position: absolute;
+    left: 140px;
+    top: 0;
+    width: 400px;
+    height: 180px;
+    display: none;
+}
+.tabs input[type="radio"] {
+    display: none;
+}
+.tabs input[type="radio"]:checked+label {
+    background-color: rgba(20, 127, 205, 0.5);
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+.tabs .ttext1 {
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    margin: 25px 0 0 110px;
+}
+.tabs .tab .simbol {
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.tabs .tab ul li {
+    float: left;
+    width: 75px;
+}
+.tabs .tab ul li:first-child {
+    margin-left: 15px;
+}
+.tabs .tab ul li h3 {
+    font-size: 40px;
+    color: rgba(20, 127, 205, 0.5);
+    text-align: center;
+}
+.tabs .tab ul li p {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(20, 127, 205)
+}
+.tabs .ttext3 {
+    float: left;
+    margin: 25px 15px;
+    width: 150px;
+}
+.tabs .tt3l {
+    margin-left: 35px;
+}
+.tabs .ttext3 h3 {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 푸터 */
+
+footer {
+    margin: 25px 40px 10px 40px;
+    padding: 20px 0;
+    border-top: 1px solid rgb(198, 200, 209);
+}
+footer ul li a {
+    float: left;
+    color: black;
+    font-size: 11px;
+    padding: 0 10px;
+    border-right: 1px solid rgb(198, 200, 209);
+}
+footer ul li:first-child a {
+    padding-left: 0;
+}
+footer ul li:last-child a {
+    border-right: none;
+}
+footer p {
+    clear: both;
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 11px;
+}

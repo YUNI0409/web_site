@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+aside {
+    width: 1100px;
+    margin: 70px auto;
+}
+#aside {
+    width: 200px;
+    float: left;
+    margin-right: 70px;
+    text-align: center;
+    position: fixed;
+}
+#aside>ul {
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+}
+#aside ul li ul li {
+    padding: 5px 0;
+}
+#aside ul h2 {
+    background-color: rgb(20, 127, 205);
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+}
+#aside ul li h3 {
+    background-color: rgb(192, 192, 192);
+    border-top: 1px solid rgba(209, 209, 209, 0.8);
+    border-bottom: 1px solid rgba(209, 209, 209, 0.8);
+    font-size: 15px;
+    padding: 10px;
+}
+#aside ul li ul li {
+    border-bottom: 1px solid rgba(175, 175, 175, 0.7);
+    padding: 10px 0;
+}
+#aside ul li ul li:last-child {
+    border: none;
+}
+#aside ul li ul li:last-child h3 {
+    border-radius: 0 0 10px 10px;
+}
+#aside ul li ul li a {
+    font-size: 13px;
+    display: block;
+    width: 200px;
+}
+
+section {
+    margin-left: 350px;
+}
+#mainsection h1 {
+    font-size: 30px;
+    text-align: center;
+}
+#mainsection>ul {
+    width: 425px;
+    margin: 20px auto;
+}
+#mainsection>ul>li {
+    float: left;
+}
+#mainsection>ul>li a {
+    width: 200px;
+    display: block;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px 0;
+    margin: 5px;
+    text-align: center;
+}
+#mainsection>ul>li:hover a {
+    background-color: gainsboro;
+}
+#search {
+    width: 250px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 10px 120px;
+    background-color: rgb(20, 127, 205);
+    border-radius: 10px;
+}
+.line {
+    border-bottom: 1px solid rgb(190, 190, 190);
+    width: 700px;
+    margin: 50px auto;
+}
+#post {
+    margin: 50px 20px;
+}
+#post ul {
+    width: 720px;
+    margin: 0 auto;
+}
+#post ul li a {
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+#post ul li p {
+    font-size: 12px;
+}
+#post ul li img {
+    transition: all 0.5s;
+}
+#post ul li:hover img {
+    transform: scale(1.2);
+}
+#post .pimg {
+    width: 200px;
+    height: 125px;
+    overflow: hidden;
+}
+#post h5 {
+    margin: 5px;
+    font-size: 11px;
+}
+#post ul li p {
+    margin: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+#post ul li:hover h5 {
+    color: white
+}
+#post ul li:hover p {
+    color: white;
+    font-weight: bold;
+}
+#post ul li:hover a {
+    background-color: rgba(255, 0, 0, 0.747);
+}
+#number ul {
+    width: 170px;
+    text-align: center;
+    margin: 40px auto;
+    padding-bottom: 25px;
+
+}
+#number ul li:first-child a {
+    color: rgba(107, 107, 107, 0.8); 
+    font-weight: bold;
+}
+#number ul li a {
+    float: left;
+    color: rgb(155, 155, 155);
+    padding: 0 10px;
+}

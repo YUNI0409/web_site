@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+aside {
+    width: 1100px;
+    margin: 70px auto;
+}
+#aside {
+    width: 200px;
+    float: left;
+    margin-right: 70px;
+    text-align: center;
+    position: fixed;
+}
+#aside>ul {
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+}
+#aside ul li ul li {
+    padding: 5px 0;
+}
+#aside ul h2 {
+    background-color: rgb(20, 127, 205);
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+}
+#aside ul li h3 {
+    background-color: rgb(192, 192, 192);
+    border-top: 1px solid rgba(209, 209, 209, 0.8);
+    border-bottom: 1px solid rgba(209, 209, 209, 0.8);
+    font-size: 15px;
+    padding: 10px;
+}
+#aside ul li ul li {
+    border-bottom: 1px solid rgba(175, 175, 175, 0.7);
+    padding: 10px 0;
+}
+#aside ul li:last-child h3 {
+    border-radius: 0 0 10px 10px;
+}
+#aside ul li ul li a {
+    font-size: 13px;
+    display: block;
+    width: 200px;
+}
+section {
+    margin-left: 350px;
+}
+#street h2 a {
+    background-color: rgb(20, 127, 205);
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+    margin: 0 auto;
+}
+#map {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#map h1 {
+    font-size: 30px;
+    color: rgb(100, 100, 100);
+    margin-bottom: 20px;
+}
+#map .block {
+    overflow: hidden;
+    height: 375px;
+}
+#map .black {
+    background-color: rgba(140, 161, 175, 0.9);
+    width: 600px;
+    height: 380px;
+    transition: all 0.4s;
+    transform: translateY(-760px);      
+}
+#map .block:hover .black {
+    transform: translateY(-380px);    
+}
+#map .block .black h3 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    padding-top: 55px;
+    line-height: 35px;
+}
+#map .block .black p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+}
+#street h2 a {
+    color: white;
+    background-color: rgb(20, 127, 205);
+    font-size: 15px;
+    text-align: center;
+}
+#street .inside {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 700px;
+}
+#street :target .inside {
+    height: 500px;
+    padding-top: 45px;
+}
